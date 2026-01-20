@@ -9,20 +9,32 @@ namespace VelopackTest
         public Form1()
         {
             InitializeComponent();
+
+            button1.PerformClick();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            button1.Enabled = false;
-            UpdateMyApp().GetAwaiter().GetResult();
-            button1.Enabled = true;
+            try
+            {
+                button1.Enabled = false;
+                await UpdateMyApp();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                button1.Enabled = true;
+            }
         }
 
         public async Task UpdateMyApp()
         {
             // Point to your GitHub Repository
-            var source = new GithubSource("https://github.com/dechant3st/VeloTest/releases/latest/download/RELEASES", null, false);
-            var mgr = new UpdateManager(source);
+            var source = new GithubSource("https://github.com/dechant3st/VeloTest", null, false);
+            var mgr = new UpdateManager(source);//"https://github.com/dechant3st/VeloTest/releases/latest/download");
 
             // 1. Check for new version
             var newVersion = await mgr.CheckForUpdatesAsync();

@@ -50,7 +50,7 @@
             label1.Name = "label1";
             label1.Size = new Size(838, 164);
             label1.TabIndex = 1;
-            label1.Text = "WELCOME 1.1";
+            label1.Text = "WELCOME 1.2";
             // 
             // Form1
             // 
