@@ -21,7 +21,7 @@ namespace VelopackTest
         public async Task UpdateMyApp()
         {
             // Point to your GitHub Repository
-            var source = new GithubSource("https://github.com", null, false);
+            var source = new GithubSource("https://github.com/dechant3st/VeloTest/releases/latest/download/RELEASES", null, false);
             var mgr = new UpdateManager(source);
 
             // 1. Check for new version
