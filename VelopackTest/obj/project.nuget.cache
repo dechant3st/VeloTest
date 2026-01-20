@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+dHdQ/vndAw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RG\\source\\repos\\VelopackTest\\VelopackTest\\VelopackTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RG\\.nuget\\packages\\nuget.versioning\\6.14.0\\nuget.versioning.6.14.0.nupkg.sha512",
+    "C:\\Users\\RG\\.nuget\\packages\\velopack\\0.0.1298\\velopack.0.0.1298.nupkg.sha512"
+  ],
+  "logs": []
+}

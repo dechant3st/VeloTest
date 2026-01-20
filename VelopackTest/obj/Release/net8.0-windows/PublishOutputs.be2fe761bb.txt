@@ -1,0 +1,7 @@
+C:\Users\RG\source\repos\VelopackTest\publish\VelopackTest.exe
+C:\Users\RG\source\repos\VelopackTest\publish\VelopackTest.dll
+C:\Users\RG\source\repos\VelopackTest\publish\VelopackTest.deps.json
+C:\Users\RG\source\repos\VelopackTest\publish\VelopackTest.runtimeconfig.json
+C:\Users\RG\source\repos\VelopackTest\publish\VelopackTest.pdb
+C:\Users\RG\source\repos\VelopackTest\publish\NuGet.Versioning.dll
+C:\Users\RG\source\repos\VelopackTest\publish\Velopack.dll
